@@ -23,7 +23,7 @@ app.get('/add-product', (req, res) => {
 
 // Route to handle form submission
 app.post('/add-product', (req, res) => {
-    const { productName, size } = req.body; // Destructure the parsed form data
+    const { productName, size } = req.body; 
     console.log(`Product Name: ${productName}, Product Size: ${size}`);
     res.send('Product added successfully!');
 });
